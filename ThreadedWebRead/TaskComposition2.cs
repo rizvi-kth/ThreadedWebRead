@@ -27,7 +27,7 @@ namespace ThreadedWebRead
                 (Task<string>[] tsks) =>
                 {
                     // If one task is failed - is tracked seperately.
-                    // Get individual task results seperately (failure or success).
+                    // Get individual task results seperately (failure / success).
                     foreach (var t in tsks)
                     {
                         if (t.IsFaulted)
