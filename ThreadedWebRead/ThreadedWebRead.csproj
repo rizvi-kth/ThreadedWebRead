@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ThreadedWebRead.TaskComposition2</StartupObject>
+    <StartupObject>ThreadedWebRead.AsyncAwaitError</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncAwaitError.cs" />
+    <Compile Include="AsyncAwait.cs" />
     <Compile Include="TaskComposition2.cs" />
     <Compile Include="TaskComposition.cs" />
     <Compile Include="TaskFail.cs" />

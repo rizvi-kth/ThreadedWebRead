@@ -14,7 +14,7 @@ namespace SimpleWeb
 
         public void ProcessRequest(HttpContext context)
         {
-            //Thread.Sleep(5000);
+            Thread.Sleep(3000);
             //context.Response.ContentType = "text/plain";
             context.Response.StatusCode = 404;
         }
