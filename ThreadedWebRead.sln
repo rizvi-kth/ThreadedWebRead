@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadedWebRead", "Threaded
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWeb", "SimpleWeb\SimpleWeb.csproj", "{92D8B554-FE32-46E8-9591-DD5191DACF8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadedWebReadWPF", "ThreadedWebReadWPF\ThreadedWebReadWPF.csproj", "{1550F45A-2A45-472A-930B-7B6304E8DDA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{92D8B554-FE32-46E8-9591-DD5191DACF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92D8B554-FE32-46E8-9591-DD5191DACF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92D8B554-FE32-46E8-9591-DD5191DACF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1550F45A-2A45-472A-930B-7B6304E8DDA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1550F45A-2A45-472A-930B-7B6304E8DDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1550F45A-2A45-472A-930B-7B6304E8DDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1550F45A-2A45-472A-930B-7B6304E8DDA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
