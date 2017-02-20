@@ -44,5 +44,16 @@ namespace ThreadedWebReadWPF
             }, taskSchedular);
 
         }
+
+        private async void button1_Click(object sender, RoutedEventArgs e)
+        {
+            button1.IsEnabled = false;
+            
+            string cont = await wc.DownloadStringTaskAsync("http://localhost:9240/Slow.ashx");
+
+            // With async/await - after executioin of the worker thread we will automatically get back to the main WPF-UI thread
+            button1.IsEnabled = true;
+            textBlock.Text = cont;
+        }
     }
 }
