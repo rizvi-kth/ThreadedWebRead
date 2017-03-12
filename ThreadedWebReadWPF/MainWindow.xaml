@@ -8,8 +8,13 @@
         Title="WebReadWindow" Height="350" Width="525">
     <Grid>
         <Button x:Name="button" Content="Call web with Task" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="497" Click="button_Click"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,87,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="222" Width="497"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,51,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="57" Width="497"/>
         <Button x:Name="button1" Content="Call web with async/await" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="497" Click="button1_Click"/>
+        <Button x:Name="button_TaskStart" Content="Start Task (Fast)" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Width="205" Click="button_TaskStart_Click"/>
+        <Button x:Name="button_TaskStartAll" Content="Start Task (Gaurented All)" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Width="205" Click="button_TaskStartAll_Click"/>
+        <Button x:Name="button_TaskStartOneByOne" Content="Start Task (Gaurented one by one)" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="205" Click="button_TaskStartOneByOne_Click"/>
+        <Button x:Name="button_StopTask" Content="Stop Task" HorizontalAlignment="Left" Margin="292,138,0,0" VerticalAlignment="Top" Width="215" Click="button_StopTask_Click"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="108" Margin="10,203,0,0" VerticalAlignment="Top" Width="497"/>
 
     </Grid>
 </Window>
