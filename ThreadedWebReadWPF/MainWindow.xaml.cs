@@ -250,11 +250,19 @@ namespace ThreadedWebReadWPF
                     }
                     catch (AggregateException aex)
                     {
-                        foreach (var exx in aex.InnerExceptions)
+
+
+                        foreach (var exx in aex.Flatten().InnerExceptions)
                         {
-                            if (exx is OperationCanceledException)
+                            //var x = exx.GetType();
+                            //var y = typeof(TaskCanceledException);
+                            if (exx.GetType() == typeof(TaskCanceledException))
                             {
-                                listBox.Items.Add("<<Canceled>>");
+                                listBox.Items.Add("<<Task Canceled>>");
+                            }
+                            if (exx.GetType() == typeof(WebException))
+                            {
+                                listBox.Items.Add("<<Web request Canceled>>");
                             }
                             else
                             {
